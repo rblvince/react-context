@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: var(--color-slate-50);
+}
+
+/* chi naviga con la tastiera (Tab) vede sempre dove si trova */
+:focus-visible {
+  outline: 2px solid var(--color-slate-900);
+  outline-offset: 2px;
+}
+
+/* tema scuro: segue le impostazioni del sistema, nessun toggle */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--color-slate-950);
+  }
+
+  :focus-visible {
+    outline-color: var(--color-slate-100);
+  }
+}
