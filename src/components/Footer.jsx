@@ -1,4 +1,4 @@
-import { useThermostat } from '../contexts/thermostat';
+import { useThermostat } from '../contexts/ThermostatContext';
 
 export default function Footer() {
   const { temperature } = useThermostat();

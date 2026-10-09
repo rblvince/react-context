@@ -1,4 +1,4 @@
-import { useThermostat } from '../contexts/thermostat';
+import { useThermostat } from '../contexts/ThermostatContext';
 
 export default function Sidebar() {
   // nessuna prop: la funzione reset arriva direttamente dal context
