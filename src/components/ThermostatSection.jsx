@@ -1,4 +1,4 @@
-import { useThermostat } from '../contexts/thermostat';
+import { useThermostat } from '../contexts/ThermostatContext';
 import { getLabel } from '../utils';
 
 // stile comune ai tre bottoni (min-h-11 = 44px, bersaglio comodo da toccare);

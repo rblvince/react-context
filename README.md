@@ -16,8 +16,7 @@ Vite + React + Tailwind CSS (`@tailwindcss/vite`).
 
 ## Come è fatto
 
-- `src/contexts/ThermostatContext.jsx`: il `ThermostatProvider` tiene l'unico stato (`temperature`) e mette a disposizione `increase`, `decrease`, `reset`, `isMin` e `isMax`.
-- `src/contexts/thermostat.js`: il context, le costanti e l'hook `useThermostat()`, che avvisa con un errore chiaro se usato fuori dal Provider.
+- `src/contexts/ThermostatContext.jsx`: un solo file con il context, le costanti, il `ThermostatProvider` e l'hook `useThermostat()`. Il Provider tiene l'unico stato (`temperature`) e mette a disposizione `increase`, `decrease`, `reset`, `isMin` e `isMax`; l'hook avvisa con un errore chiaro se usato fuori dal Provider.
 - `src/utils.js`: `getLabel()`, funzione pura che dà l'etichetta; il suo test è in `src/utils.test.js`.
 - `isMin`, `isMax` e l'etichetta sono valori derivati: si calcolano a ogni render, senza un secondo `useState`.
 
